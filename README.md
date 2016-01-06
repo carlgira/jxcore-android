@@ -8,6 +8,7 @@ Instructions
 1. Install jxcore-android in local repository.
 
   cd jxcore-android
+  
   gralde install
 
 2. Install android-jxcore-sample in device (check the log to see that JXCore engine starts and that the http server works)
