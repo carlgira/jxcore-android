@@ -1,0 +1,15 @@
+{
+  "name": "wslocaserver",
+  "version": "1.0.0",
+  "description": "WebSocket Server",
+  "main": "ws_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "websocket": "^1.0.22",
+    "ws": "^0.8.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
