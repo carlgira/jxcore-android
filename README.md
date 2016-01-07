@@ -51,14 +51,18 @@ To test directly the projects follow the next instructions.
 
 ```sh
   $ cd jxcore-android
-  $ gralde install
+  $ gradle install
 ```
   
 2. Install android-jxcore-sample in device (check the log to see that JXCore engine starts and that the http server works)
 
 #### Installation in your own android project
 - Install jxcore-android, "gradle install"
+- Add the mavenLocal() to the repositories
 - Add the dependecie in the gradle script of the android project
+```javascript
+     compile 'com.carlgira:jxcore-android:0.3.1.0'
+```
 - Add to the manifest the INTERNET permission.
 ```xml
   <uses-permission android:name="android.permission.INTERNET"></uses-permission>
