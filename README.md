@@ -1,7 +1,7 @@
 # jxcore
 JXCore android sample with no cordova.
 
-[06/01/2015] More instructions in a couple of days.
+[06/01/2016] More instructions in a couple of days.
 
 Instructions
 
