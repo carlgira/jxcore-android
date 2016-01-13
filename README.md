@@ -77,6 +77,4 @@ See everything in the example.
 [capsample]: https://github.com/capriza/jxcore-android-sample
  You can also see [https://github.com/capriza/jxcore-android-sample][capsample]
 
-### JXCore Ios
-Comming soon!
 
