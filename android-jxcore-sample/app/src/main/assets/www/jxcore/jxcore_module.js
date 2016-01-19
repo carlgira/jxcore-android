@@ -1,9 +1,9 @@
 var wsLocalServer = require("ws_server.js");
 
 var JXCoreModule = {
-    callJavaFunction: null,
-    init: function(callJavaFunction){
-        this.callJavaFunction = callJavaFunction;
+    callNativeFunction: null,
+    init: function(callNativeFunction){
+        this.callNativeFunction = callNativeFunction;
         wsLocalServer.init();
         console.log("JXCoreModule Init");
     },
@@ -14,13 +14,13 @@ var JXCoreModule = {
         var startServerFunction = new JSFunction("JXCoreModule_startServer", function() {
             wsLocalServer.startServer();
             console.log("JXCoreModule_startServer method");
-            self.callJavaFunction("serverStarted");
+            self.callNativeFunction("serverStarted");
         } );
 
         var stopServerFunction = new JSFunction("JXCoreModule_stopServer", function() {
             wsLocalServer.stopServer();
             console.log("JXCoreModule_sttopServer method");
-            self.callJavaFunction("serverStopped");
+            self.callNativeFunction("serverStopped");
         });
 
         return [startServerFunction, stopServerFunction];
