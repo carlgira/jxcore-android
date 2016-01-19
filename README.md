@@ -26,9 +26,9 @@ JXCore android sample with no cordova.
             }
         });
 ```
-- Call a registered Java function from Javascript. Using the JXCoreModule just use the function "callJavaFunction".
+- Call a registered Java function from Javascript. Using the JXCoreModule just use the function "callNativeFunction".
 ```javascript
-     this.callJavaFunction("serverStarted");
+     this.callNativeFunction("serverStarted");
 ```
 - Register a Javascript function that can be called from Java. Adding registered functions to the method "registerJSFunction" into the jxcore_module.js
 ```javascript
